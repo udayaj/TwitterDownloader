@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- config.xml -->
+<configuration>
+    <!--<env />-->
+    <xml fileName="dbconfig.xml"/>
+    <xml fileName="twitter-auth-config.xml"/>
+    <!--<xml fileName="twitter-auth-config.xml">
+        <reloadingStrategy refreshDelay="10000"
+        config-class="org.apache.commons.configuration.reloading.FileChangedReloadingStrategy"/>
+    </xml>-->
+</configuration>
