@@ -2,9 +2,9 @@
 <!-- const.xml -->
 <configuration>
     <auth>
-        <consumer-key>8NyXV3C5YxueUe7j5Ou7sPn4J</consumer-key>
-        <consumer-secret>cIsvKP3QJQZTsT4yY7kScoEE0gersCIFRWErLyjhD3ditKYxoV</consumer-secret>
-        <access-token>2516290062-1yICePWaYQpDrU1M1HTxhGe240FvJD7EdFflw99</access-token>
-        <access-token-secret>kq6ifFVY9EQa37kDV2iYFbWLpvcEAq8iJinFTuz0wUS19</access-token-secret>
+        <consumer-key>****</consumer-key>
+        <consumer-secret>**********</consumer-secret>
+        <access-token>**********</access-token>
+        <access-token-secret>**********</access-token-secret>
     </auth>
 </configuration>

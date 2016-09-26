@@ -22,12 +22,7 @@ import org.apache.commons.lang.exception.NestableException;
 import twitter4j.*;
 import twitter4j.conf.ConfigurationBuilder;
 
-//class EchoTask extends TimerTask {
-//    @Override
-//    public void run() {
-//        System.out.println(new Date() + " running ...");
-//    }
-//}
+
 public class Main implements Daemon {
 
     private static String CONSUMER_KEY = "";
@@ -43,10 +38,7 @@ public class Main implements Daemon {
     private static final String OHIO_PATTERN = "(.*[^a-zA-Z\\d:]{1}|^)(oh|OH|ohio|Ohio|OHIO){1}([^a-zA-Z\\d:]{1}.*|$)";
     private static Connection dbcon = null;
 
-    //private static Timer timer = null;
     public static void main(String[] args) throws TwitterException {
-        //timer = new Timer();
-        //timer.schedule(new EchoTask(), 0, 1000);
 
 
         System.out.println("Streaming started at " + new Date().toString());
@@ -102,6 +94,7 @@ public class Main implements Daemon {
         //String[] arrParams = {"flu,fever"};
         String[] arrParams = {};
         String[] arrLang = {"en"};
+        //TO-DO: Move the bounding box to the config flies
         double[][] arrLocations = {{-84.812071, 38.400511}, {-80.519996, 41.986872}};
         //-122.75,36.8,-121.75,37.8
 
@@ -252,7 +245,6 @@ public class Main implements Daemon {
                 preparedStatement.setString(15, status.getUser().getLocation());//UserLocation     
             }
 
-            //{-122.75, 36.8}, {-121.75, 37.8}
             preparedStatement.executeUpdate();
 
             //dbcon.close();
@@ -295,9 +287,6 @@ public class Main implements Daemon {
     @Override
     public void stop() throws Exception {
         System.out.println("stopping ...");
-//        if (timer != null) {
-//            timer.cancel();
-//        }
     }
 
     @Override

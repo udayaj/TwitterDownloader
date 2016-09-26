@@ -3,8 +3,8 @@
     <database>
         <host>127.0.0.1</host>
         <port>5432</port>
-        <user>udaya</user>
-        <password>abc123</password>
+        <user>****</user>
+        <password>****</password>
         <name>twitterdb</name>
     </database>
 </configuration>
