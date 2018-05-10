@@ -64,12 +64,6 @@ public class Main implements Daemon {
             DB_PASSWORD = config.getString("database.password");
             DB_NAME = config.getString("database.name");
 
-            System.out.println("DB_HOST: " + DB_HOST);
-            System.out.println("DB_PORT: " + DB_PORT);
-            System.out.println("DB_USER: " + DB_USER);
-            System.out.println("DB_PASSWORD: " + DB_PASSWORD);
-            System.out.println("DB_NAME: " + DB_NAME);
-
             //XMLConfiguration config = new XMLConfiguration("config\\config.xml");
             //System.out.println("consumer key: " + config.getString("database.url"));     
             Class.forName("org.postgresql.Driver");
